@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>💕 Our Beautiful Journey 💕</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts for a romantic vibe -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(120deg, #ffe8ef 0%, #c9e7ff 100%);
+            font-family: 'Quicksand', sans-serif;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 2em 1em 1em 1em;
+        }
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 2.7em;
+            color: #ff69b4;
+            margin-bottom: 0.2em;
+            letter-spacing: 2px;
+            animation: popIn 1s cubic-bezier(.36,1.04,.84,-0.18);
+        }
+        header p {
+            font-size: 1.2em;
+            color: #7f669d;
+            margin-top: 0;
+            margin-bottom: 1em;
+            animation: fadeIn 2s;
+        }
+        .animated-heart {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 10px auto;
+        }
+        .animated-heart:before, .animated-heart:after {
+            content: "";
+            position: absolute;
+            left: 30px;
+            top: 0;
+            width: 30px;
+            height: 48px;
+            background: #ff69b4;
+            border-radius: 30px 30px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+        .animated-heart:after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+        @keyframes popIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            80% { transform: scale(1.1); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        /* Floating emojis animation */
+        .emoji-float {
+            position: fixed;
+            bottom: -50px;
+            font-size: 2em;
+            animation: float 8s linear infinite;
+            pointer-events: none;
+            z-index: 100;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0) scale(1) rotate(0deg);
+                opacity: 0.7;
+            }
+            20% { opacity: 1;}
+            60% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) scale(1.3) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        section {
+            max-width: 700px;
+            margin: 2em auto;
+            background: rgba(255,255,255,0.85);
+            border-radius: 1.5em;
+            box-shadow: 0 6px 32px rgba(255, 105, 180, 0.18);
+            padding: 2em 1.2em;
+            text-align: center;
+        }
+        .quote-box {
+            background: linear-gradient(90deg,#ffd6e0 0%, #fffde4 100%);
+            padding: 1.5em 1em;
+            border-radius: 1em;
+            margin: 1.5em 0;
+            font-size: 1.2em;
+            color: #ff69b4;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(255, 182, 193, 0.08);
+            font-family: 'Pacifico', cursive;
+            min-height: 55px;
+            animation: fadeIn 1.5s;
+        }
+        .purpose {
+            font-size: 1.1em;
+            color: #6d4e8e;
+            margin: 1.3em 0 0.8em 0;
+            padding: 0.7em 0.4em;
+            background: #f3e5f5;
+            border-radius: 0.7em;
+        }
+        .proposal {
+            margin: 2em 0 0 0;
+            font-family: 'Pacifico', cursive;
+            color: #ba68c8;
+            font-size: 1.5em;
+            background: #fffde7;
+            border-radius: 1em;
+            padding: 1.2em;
+            box-shadow: 0 8px 36px rgba(186, 104, 200, 0.08);
+            animation: popIn 1.5s;
+        }
+        .proposal span {
+            font-size: 2em;
+            margin: 0 0.2em;
+        }
+        .stickers {
+            margin: 2em 0;
+        }
+        .stickers img {
+            width: 64px;
+            height: 64px;
+            margin: 0.2em 0.7em;
+            transition: transform 0.3s;
+            cursor: pointer;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px #ffe4ec77;
+        }
+        .stickers img:hover {
+            transform: scale(1.2) rotate(-8deg);
+        }
+        /* Like/Reaction button */
+        .reaction-btn {
+            background: linear-gradient(90deg, #ffb6c1 0%, #fad0c4 100%);
+            border: none;
+            border-radius: 1.3em;
+            font-size: 1.2em;
+            color: #fff;
+            padding: 0.6em 2em;
+            margin: 1.2em 0 0.5em 0;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.2s;
+            font-family: 'Quicksand', sans-serif;
+            box-shadow: 0 2px 8px #ffb6c144;
+        }
+        .reaction-btn:hover {
+            background: linear-gradient(90deg, #fad0c4 0%, #ffb6c1 100%);
+            transform: scale(1.08);
+        }
+        .like-count {
+            font-size: 1.1em;
+            color: #ff69b4;
+            margin-left: 0.7em;
+            font-weight: bold;
+        }
+        /* Responsive design */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2em; }
+            section { padding: 1em 0.4em; }
+            .stickers img { width: 48px; height: 48px; }
+            .proposal { font-size: 1.1em;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="animated-heart"></div>
+        <h1>For My One & Only 💖</h1>
+        <p>Surprise! This page is made just for you, to celebrate our magical story, our laughter, and the love that keeps growing every day. 💑✨</p>
+    </header>
+    <section>
+        <div class="purpose">
+            <b>Purpose of this website:</b><br>
+            To make you smile, remind you how much you mean to me, and create a little corner of the internet just for us! 💌
+        </div>
+        <div class="quote-box" id="quoteBox">
+            <!-- Quotes will appear here -->
+        </div>
+        <button class="reaction-btn" onclick="likeLove()">
+            ❤️ Like this surprise <span class="like-count" id="likeCount">0</span>
+        </button>
+        <div class="stickers">
+            <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f970.png" alt="Smiling face with hearts" title="So much love!">
+            <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f60d.png" alt="Heart eyes" title="You are amazing!">
+            <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f618.png" alt="Kiss" title="Sending a kiss!">
+            <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f496.png" alt="Sparkling heart" title="Sparkling love">
+            <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f48c.png" alt="Love letter" title="A love letter">
+        </div>
+        <div class="proposal">
+            <span>💍</span> 
+            Will you always be my love, my best friend, and my forever? <br>
+            <span>👩‍❤️‍👨</span>
+        </div>
+    </section>
+    <!-- Floating emojis (animated) -->
+    <script>
+        // Floating emojis
+        const floatEmojis = ["😍","🥰","💖","💞","💘","💕","😘","🌹","✨","🥳","🎉"];
+        function createFloatingEmoji() {
+            const emoji = document.createElement('div');
+            emoji.className = 'emoji-float';
+            emoji.textContent = floatEmojis[Math.floor(Math.random()*floatEmojis.length)];
+            emoji.style.left = Math.random() * 95 + "vw";
+            emoji.style.fontSize = (Math.random()*1.5 + 1.5) + "em";
+            emoji.style.animationDuration = (Math.random()*5 + 6) + "s";
+            document.body.appendChild(emoji);
+            setTimeout(() => emoji.remove(), 9000);
+        }
+        setInterval(createFloatingEmoji, 800);
+
+        // Rotating love quotes
+        const quotes = [
+            "“You are my today and all of my tomorrows.” – Leo Christopher",
+            "“I still get butterflies even though I’ve seen you a hundred times.” 🦋",
+            "“In you, I’ve found the love of my life and my closest, truest friend.”",
+            "“If I did anything right in my life, it was when I gave my heart to you.”",
+            "“Every love story is beautiful, but ours is my favorite.” 💖",
+            "“You are the peanut butter to my jelly, the sun to my shine, and the beat to my heart.”",
+            "“With you, every moment is magical.” ✨",
+            "“I choose you. And I’ll choose you over and over.”",
+            "“You’re the reason I believe in love.”",
+            "“To the world you may be one person, but to me you are the world.”"
+        ];
+        let quoteIndex = Math.floor(Math.random()*quotes.length);
+        function showQuote() {
+            document.getElementById('quoteBox').textContent = quotes[quoteIndex];
+            quoteIndex = (quoteIndex + 1) % quotes.length;
+        }
+        showQuote();
+        setInterval(showQuote, 4000);
+
+        // Like/Reaction button logic
+        let likes = 0;
+        function likeLove() {
+            likes++;
+            document.getElementById('likeCount').textContent = likes;
+            // Burst effect with emojis
+            for(let i=0; i<6; i++) {
+                setTimeout(createFloatingEmoji, i*120);
+            }
+        }
+    </script>
+</body>
+</html>
