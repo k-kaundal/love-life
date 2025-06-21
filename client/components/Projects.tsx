@@ -37,7 +37,7 @@ const projects: {
   {
     title: "Open Science Blog",
     desc: "Personal website sharing research articles, lab notes, and educational content in microbiology and life sciences.",
-    link: "https://medium.com/@garima.microbio",
+    link: "https://article.kaundal.vip",
     status: "live",
     tags: ["Blog", "Science Communication", "Microbiology"],
   },
