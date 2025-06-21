@@ -3,13 +3,13 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Garima Kumar — Microbiologist",
+  title: "Garima Kumari — Microbiologist",
   description:
-    "Garima Kumar is a microbiologist with expertise in microbial research, laboratory techniques, and scientific exploration. Explore her publications, experience, and connect for research collaboration.",
-  authors: [{ name: "Garima Kumar", url: "https://your-profile-link.com" }],
-  creator: "Garima Kumar",
+    "Garima Kumari is a microbiologist with expertise in microbial research, laboratory techniques, and scientific exploration. Explore her publications, experience, and connect for research collaboration.",
+  authors: [{ name: "Garima Kumari", url: "https://x.com/anu_garima" }],
+  creator: "Garima Kumari",
   keywords: [
-    "Garima Kumar",
+    "Garima Kumari",
     "Microbiologist",
     "Microbiology",
     "Lab Techniques",
@@ -25,17 +25,17 @@ export const metadata: Metadata = {
     "Research Collaboration",
   ],
   openGraph: {
-    title: "Garima Kumar — Microbiologist",
+    title: "Garima Kumari — Microbiologist",
     description:
-      "Microbiologist specializing in microbial research, laboratory techniques, and scientific exploration. Explore publications, experience, and connect with Garima Kumar.",
-    url: "https://your-profile-link.com",
-    siteName: "Garima Kumar Portfolio",
+      "Microbiologist specializing in microbial research, laboratory techniques, and scientific exploration. Explore publications, experience, and connect with Garima Kumari.",
+    url: "https://garima.kuandla.vip",
+    siteName: "Garima Kumari Portfolio",
     images: [
       {
-        url: "https://your-profile-link.com/garima.jpg",
+        url: "https://garima.kuandla.vip/garima.png",
         width: 1200,
         height: 630,
-        alt: "Garima Kumar — Microbiologist",
+        alt: "Garima Kumari — Microbiologist",
       },
     ],
     type: "website",
@@ -44,10 +44,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@your_twitter_handle",
     creator: "@your_twitter_handle",
-    title: "Garima Kumar — Microbiologist",
+    title: "Garima Kumari — Microbiologist",
     description:
-      "Microbiologist specializing in microbial research, laboratory techniques, and scientific exploration. Explore publications, experience, and connect with Garima Kumar.",
-    images: ["https://your-profile-link.com/garima.jpg"],
+      "Microbiologist specializing in microbial research, laboratory techniques, and scientific exploration. Explore publications, experience, and connect with Garima Kumari.",
+    images: ["https://garima.kaundal.vip/garima.png"],
   },
   icons: {
     icon: "/favicon.ico",

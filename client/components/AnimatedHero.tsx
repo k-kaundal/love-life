@@ -14,7 +14,7 @@ const imageVariants = {
   animate: { scale: 1, rotate: 0, opacity: 1, transition: { duration: 1.2, delay: 0.2 } },
 };
 
-// Update social links and handle as needed for Garima Kumar
+// Update social links and handle as needed for Garima Kumari
 const socials = [
 //   {
 //     icon: FaLinkedin,
@@ -50,7 +50,7 @@ const AnimatedHero = () => {
           className="w-full md:w-1/2"
         >
           <h1 className="text-5xl md:text-6xl font-extrabold text-gradient bg-gradient-to-r from-green-400 via-blue-500 to-purple-700 bg-clip-text text-transparent">
-            Garima Kumar
+            Garima Kumari
           </h1>
           <h2 className="mt-4 text-2xl md:text-3xl text-gray-600 dark:text-gray-300 font-semibold">
             Microbiologist · Researcher · Scientific Explorer
@@ -100,7 +100,7 @@ const AnimatedHero = () => {
         >
           <Image
             src="/garima.png"
-            alt="Garima Kumar"
+            alt="Garima Kumari"
             width={280}
             height={280}
             priority

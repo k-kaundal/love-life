@@ -3,7 +3,7 @@ import React from "react";
 import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope, FaGlobe, FaMedium } from "react-icons/fa";
 import Image from "next/image";
 
-// Update these links and labels to Garima Kumar's actual details as needed
+// Update these links and labels to Garima Kumari's actual details as needed
 const socials = [
 //   {
 //     icon: FaLinkedin,
@@ -51,12 +51,12 @@ export default function Contact() {
         <div className="mb-8 flex flex-col items-center">
           <Image
             src="/garima.png"
-            alt="Garima Kumar"
+            alt="Garima Kumari"
             width={110}
             height={110}
             className="rounded-full border-4 border-blue-300 shadow-lg mb-4"
           />
-          <div className="font-bold text-xl">Garima Kumar</div>
+          <div className="font-bold text-xl">Garima Kumari</div>
           <div className="text-blue-600 dark:text-blue-300 font-medium mt-1">
             Microbiologist · Researcher
           </div>

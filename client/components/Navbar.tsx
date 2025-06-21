@@ -29,7 +29,7 @@ export default function Navbar() {
           href="/"
           className="font-extrabold text-2xl md:text-3xl bg-gradient-to-r from-blue-600 via-green-500 to-cyan-500 bg-clip-text text-transparent tracking-tight"
         >
-          Garima Kumar
+          Garima Kumari
         </Link>
         <div className="md:hidden">
           <motion.button

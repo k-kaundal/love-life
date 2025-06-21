@@ -36,7 +36,7 @@ export default function Footer() {
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="text-center md:text-left">
           <div className="font-bold text-lg tracking-tight">
-            Garima Kumar &copy; {new Date().getFullYear()}
+            Garima Kumari &copy; {new Date().getFullYear()}
           </div>
           <div className="text-sm mt-1 text-blue-200">
             Crafted with Next.js, TypeScript, Tailwind CSS &amp; ❤️
