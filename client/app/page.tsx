@@ -7,6 +7,7 @@ import Navbar from '@/components/Navbar';
 import Experience from '@/components/Experience';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import Posts from '@/components/Posts';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <TechStack />
         <Projects />
         <Experience />
+        <Posts />
         <Contact />
         <Footer />
       </main>

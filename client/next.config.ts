@@ -1,7 +1,22 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'article.kaundal.vip',
+        pathname: '/wp-content/uploads/**',
+      },
+    ],
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/graphql',
+        destination: 'https://article.kaundal.vip/graphql',
+      },
+    ];
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
