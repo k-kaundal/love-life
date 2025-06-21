@@ -8,9 +8,12 @@ import Experience from '@/components/Experience';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import Posts from '@/components/Posts';
+import { ApolloProvider } from '@apollo/client';
+import client from '@/lib/apollo-client';
 
 export default function Home() {
   return (
+     <ApolloProvider client={client}>
       <main className="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-white">
         <Navbar />
         <AnimatedHero />
@@ -21,5 +24,6 @@ export default function Home() {
         <Contact />
         <Footer />
       </main>
+     </ApolloProvider>
   );
 }

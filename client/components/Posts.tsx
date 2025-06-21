@@ -3,8 +3,8 @@
 import { useQuery } from '@apollo/client';
 import Image from 'next/image';
 import Link from 'next/link';
-import { GET_POSTS } from '../lib/graphql/queries'; // Ensure this path is correct
-import { PostsData, PostsVariables, Post } from '../types/post';
+import { GET_POSTS } from '@/lib/graphql/queries';
+import { PostsData, PostsVariables, Post } from '@/types/post';
 
 const Posts: React.FC = () => {
   const { loading, error, data } = useQuery<PostsData, PostsVariables>(GET_POSTS, {
